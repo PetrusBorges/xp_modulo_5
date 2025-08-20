@@ -59,12 +59,6 @@ A API é construída com Fastify e Prisma, interagindo com o banco de dados Post
   "age": número
 }
 ```
-**Exemplo**:
-```bash
-curl -X POST <API_BASE_URL>/create \
--H "Content-Type: application/json" \
--d '{"name":"João Silva","email":"joao@exemplo.com","age":30}'
-```
 **Resposta**:
 ```json
 {
@@ -90,12 +84,6 @@ curl -X POST <API_BASE_URL>/create \
   "isActive": booleano
 }
 ```
-**Exemplo**:
-```bash
-curl -X PUT <API_BASE_URL>/uuid \
--H "Content-Type: application/json" \
--d '{"name":"João Souza","email":"joao.souza@exemplo.com","age":31,"isActive":false}'
-```
 **Resposta**:
 ```json
 {
@@ -112,10 +100,6 @@ curl -X PUT <API_BASE_URL>/uuid \
 ### 3. Deletar um Usuário
 **Rota**: `DELETE /:id`
 **Descrição**: Deleta um usuário pelo ID.
-**Exemplo**:
-```bash
-curl -X DELETE <API_BASE_URL>/uuid
-```
 **Resposta**:
 ```json
 {
@@ -132,10 +116,6 @@ curl -X DELETE <API_BASE_URL>/uuid
 ### 4. Listar Todos os Usuários
 **Rota**: `GET /`
 **Descrição**: Retorna uma lista de todos os usuários.
-**Exemplo**:
-```bash
-curl -X GET <API_BASE_URL>/
-```
 **Resposta**:
 ```json
 {
@@ -161,10 +141,6 @@ curl -X GET <API_BASE_URL>/
 ### 5. Contar Usuários
 **Rota**: `GET /count`
 **Descrição**: Retorna o número total de usuários.
-**Exemplo**:
-```bash
-curl -X GET <API_BASE_URL>/count
-```
 **Resposta**:
 ```json
 {
@@ -175,10 +151,6 @@ curl -X GET <API_BASE_URL>/count
 ### 6. Buscar Usuário por ID
 **Rota**: `GET /id/:id`
 **Descrição**: Retorna um usuário pelo ID.
-**Exemplo**:
-```bash
-curl -X GET <API_BASE_URL>/id/uuid
-```
 **Resposta**:
 ```json
 {
@@ -195,10 +167,6 @@ curl -X GET <API_BASE_URL>/id/uuid
 ### 7. Buscar Usuário por Nome
 **Rota**: `GET /name/:name`
 **Descrição**: Retorna o primeiro usuário que corresponde ao nome fornecido.
-**Exemplo**:
-```bash
-curl -X GET <API_BASE_URL>/name/João%20Silva
-```
 **Resposta**:
 ```json
 {
