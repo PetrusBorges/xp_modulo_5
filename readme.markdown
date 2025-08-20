@@ -181,7 +181,7 @@ A API é construída com Fastify e Prisma, interagindo com o banco de dados Post
 ```
 
 ## Observações
-- Certifique-se de que seu servidor Fastify está configurado para se conectar ao banco de dados PostgreSQL usando o Prisma ORM com a string de conexão: `postgresql://root:root@localhost:5432/xp_modulo_5?schema=public`.
+- Certifique-se de que o arquivo .env está configurado para se conectar ao banco de dados PostgreSQL usando o Prisma ORM com a string de conexão: `postgresql://root:root@localhost:5432/xp_modulo_5?schema=public`.
 - A API assume um esquema Prisma com um modelo `User` contendo os campos: `id` (UUID), `name` (string), `email` (string), `age` (inteiro) e `isActive` (booleano).
 
 ## Parando o Contêiner PostgreSQL
