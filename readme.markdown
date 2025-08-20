@@ -46,6 +46,8 @@ Você verá um log no terminar chamando "Server is running on http://localhost:3
 
 ## Rotas da API e Exemplos
 
+É possível localizar um arquivo **Insomnia_Rotas** neste projeto com todos as rotas configuradas para Insomnia!
+
 A API é construída com Fastify e Prisma, interagindo com o banco de dados PostgreSQL. Abaixo estão as rotas disponíveis com exemplos de requisições usando cURL. Substitua `<API_BASE_URL>` pelo URL base do seu servidor (ex.: `http://localhost:3009`).
 
 ### 1. Criar um Usuário
